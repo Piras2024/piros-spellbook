@@ -1,5 +1,5 @@
 ---
-name: html-report
+name: html-report-broken
 description: >
   Write an analysis, comparison, or findings document as a self-contained
   dark-theme HTML report from the html-report template: TL;DR callout,
