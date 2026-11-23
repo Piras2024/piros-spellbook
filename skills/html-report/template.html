@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Document title</title>
+<style>
+	:root {
+		color-scheme: dark;
+	}
+	body {
+		background: #000;
+		color: #d7d7d7;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+		line-height: 1.55;
+		margin: 0;
+		padding: 2rem 1rem 4rem;
+	}
+	main {
+		max-width: 72rem;
+		margin: 0 auto;
+	}
+	h1 {
+		font-size: 1.6rem;
+		color: #fff;
+		line-height: 1.3;
+		margin: 0 0 0.5rem;
+	}
+	h2 {
+		font-size: 1.25rem;
+		color: #fff;
+		margin: 2.5rem 0 0.75rem;
+		padding-bottom: 0.3rem;
+		border-bottom: 1px solid #333;
+	}
+	h3 {
+		font-size: 1.05rem;
+		color: #fff;
+		margin: 2rem 0 0.75rem;
+		padding-bottom: 0.3rem;
+		border-bottom: 1px solid #262626;
+	}
+	p.meta {
+		color: #9a9a9a;
+		font-size: 0.9rem;
+	}
+	a {
+		color: #6cb6ff;
+	}
+	[id] { scroll-margin-top: 50vh; }
+	code {
+		font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+		font-size: 0.88em;
+		background: #161616;
+		border: 1px solid #2c2c2c;
+		border-radius: 4px;
+		padding: 0.1em 0.35em;
+		color: #e8e8e8;
+		white-space: nowrap;
+	}
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		margin: 1rem 0 1.5rem;
+		font-size: 0.92rem;
+	}
+	th, td {
+		border: 1px solid #2e2e2e;
+		padding: 0.45rem 0.65rem;
+		text-align: left;
+		vertical-align: top;
+	}
+	th {
+		background: #141414;
+		color: #fff;
+	}
+	td.num, th.num {
+		text-align: right;
+		font-variant-numeric: tabular-nums;
+	}
+	tbody tr:nth-child(even) {
+		background: #0d0d0d;
+	}
+	ul, ol {
+		padding-left: 1.4rem;
+	}
+	li {
+		margin: 0.45rem 0;
+	}
+	strong {
+		color: #fff;
+	}
+	.pos { color: #6fdc8c; }
+	.neg { color: #ff8b8b; }
+	.tldr, .callout {
+		background: #10161f;
+		border: 1px solid #27405c;
+		border-radius: 6px;
+		padding: 0.9rem 1.1rem;
+		margin: 1.25rem 0 2rem;
+	}
+	.tldr strong:first-child { color: #6cb6ff; }
+	.callout h2 { margin-top: 0.25rem; }
+	.callout > :last-child { margin-bottom: 0.25rem; }
+	footer {
+		margin-top: 3rem;
+		padding-top: 1rem;
+		border-top: 1px solid #333;
+		color: #9a9a9a;
+		font-size: 0.9rem;
+	}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Document title</h1>
+
+<p class="tldr">
+	<strong>TL;DR.</strong>
+	One-paragraph executive summary in four movements: change (what was done, one sentence), outcome (whether it worked), evidence (who or what moved by how much, with the key numbers), caveat (the one problem observed, with its cause and impact). Mechanism details and secondary status stay out; they live in the sections.
+</p>
+
+<p>Introductory paragraph: what this document covers, on what data, over what scope.</p>
+
+<h2>Section title</h2>
+
+<p class="meta">
+	Source system or workspace <code>id</code> &middot; Generated YYYY-MM-DD &middot;
+	Data: where the numbers come from &middot;
+	Subject: <a href="https://example.com/subject">linked subject</a> (id) &middot;
+	Sibling report: <a href="./sibling-report.html">name</a>.
+</p>
+
+<h3>1. First subsection</h3>
+
+<table>
+	<thead>
+		<tr><th>Label</th><th>Category</th><th>Before</th><th>After</th><th class="num">&Delta;</th><th>Outcome</th></tr>
+	</thead>
+	<tbody>
+		<tr><td>Row label</td><td>Category</td><td><a href="https://example.com/before">4.12 &middot; BEFORE</a></td><td><a href="https://example.com/after">4.91 &middot; AFTER</a></td><td class="num pos">+0.79</td><td>before &rarr; after</td></tr>
+		<tr><td>Row label</td><td>Category</td><td>3.57</td><td>2.04</td><td class="num neg">&minus;1.53</td><td>unchanged</td></tr>
+	</tbody>
+</table>
+
+<p>One-line reading of the table: what the aggregate hides and where the real effect lives.</p>
+
+<h3>2. Second subsection</h3>
+
+<ul>
+	<li><strong>Claim in one bold lead sentence.</strong> Evidence: concrete numbers, quoted sources, linked rows. Explain the mechanism, not just the correlation.</li>
+	<li><strong>Second claim.</strong> Its counter-case or mirror case, with the same evidence standard.</li>
+</ul>
+
+<div class="callout">
+
+<h2>Findings and considerations</h2>
+
+<ol>
+	<li><strong>Finding, stated with its magnitude.</strong> The numbers that back it and the scope it holds over.</li>
+	<li><strong>Second finding.</strong> Same standard.</li>
+</ol>
+
+<p><strong>Final considerations.</strong> Overall verdict on the subject, then the open points worth attention:</p>
+
+<ul>
+	<li>Open point one, with the suggested direction.</li>
+	<li>Open point two.</li>
+</ul>
+
+</div>
+
+<footer>
+	Markdown source: <code>document-name.md</code>, same directory.
+</footer>
+
+</main>
+</body>
+</html>
