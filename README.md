@@ -4,7 +4,7 @@ Personal AI-agent skills — spells my agents can cast.
 
 ## Install
 
-With the [skills CLI](https://skills.addy.ie):
+With the [skills CLI](https://github.com/vercel-labs/skills):
 
     npx skills add Piras2024/piros-spellbook
 
